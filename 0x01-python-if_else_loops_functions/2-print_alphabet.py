@@ -1,5 +1,3 @@
 #!/usr/bin/python3
-i = ord('a')
-while i <= ord('z'):
-  print(chr(i), end="")
-  i += 1
+for x in range(97, 123):
+  print("{}".format(chr(x)), end="")
