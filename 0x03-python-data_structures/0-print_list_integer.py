@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-i = 0
 
 
 def print_list_integer(my_list=[]):
 
     for i in my_list:
-        print(i)
+        text = '{}'
+        print(text.format(i))
