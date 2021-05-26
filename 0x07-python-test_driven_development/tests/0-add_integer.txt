@@ -13,6 +13,9 @@ NameError: name 'num' is not defined
 >>> add_integer(0,0)
 0
 
+>>> add_integer(1)
+1
+
 >>> add_integer(10, "hola")
 Traceback (most recent call last):
 TypeError: b must be an integer
