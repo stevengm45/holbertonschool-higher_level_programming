@@ -12,9 +12,14 @@ class TestMaxInteger(unittest.TestCase):
         i = [1, 2, 6, 8, 19, 44, 50, 97]
         self.assertEqual(max_integer(i), 97)
 
+    def test_num_begging(self):
+        """Test number max begging"""
+        i = [54, 9, 7, 28, 10, 36]
+        self.assertEqual(max_integer(i), 54)
+
     def test_empty(self):
         """Test with empty list []"""
-        self.assertRaises(TypeError, max_integer([]), None)
+        self.assertRaises(max_integer([]), None)
 
     def test_one_arg(self):
         """Test with a argument in list"""
