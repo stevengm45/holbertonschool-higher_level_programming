@@ -19,8 +19,12 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_empty(self):
         """Test with empty list []"""
-        self.assertRaises(max_integer([]), None)
-        self.assertRaises(max_integer([1]), 1)
+        self.assertEqual(max_integer([]), None)
+        self.assertEqual(max_integer([1]), 1)
+
+    def test_value(self):
+        """Test for bad value"""
+        self.assertRaises(TypeError, max_integer, 5)
         self.assertRaises(TypeError, max_integer, None)
 
     def test_one_arg(self):
