@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """This function creat a class"""
 
+
 class Student:
     """class student"""
 
