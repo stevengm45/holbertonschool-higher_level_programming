@@ -7,42 +7,43 @@ Using ``print_sorted`` methods of MyList subclass
 Importing the function from the module:
     >>> MyList = __import__('1-my_list').MyList
 
-List with some elemets
-     >>> my_list.extend([5, 2, 9, 7])
-     >>> my_list.print_sorted()
-     [2, 5, 7, 9]
-
 List empty
-     >>> my_list = MyList()
-     >>> my_list.print_sorted()
-     []
+    >>> my_list = MyList()
+    >>> my_list.print_sorted()
+    []
+
+List with some elements
+    >>> my_list.extend([7, 9, 1, 3])
+    >>> my_list.print_sorted()
+    [1, 3, 7, 9]
 
 List already sorted
-     >>> my_list.sort()
-     >>> my_list.print_sorted()
-     [2, 5, 7, 9]
-
-Extra arguments:
-      >>> my_list.print_sorted([2, 3])
-      Traceback (most recent call last):
-      TypeError: print_sorted() takes 1 positional argument but 2 were given
-
-Module doctring:
-       >>> m_doc = __import__('1-my_list').__doc__
-       >>> len(m_doc) > 1
-       True
-
-Class docstring:
-      >>> c_doc = __import__('1-my_list').MyList.__doc__
-      >>> len(c_doc) > 1
-      True
-
-Method docstring:
-       >>> m_doc = __import__('1-my_list').MyList.print_sorted.__doc__
-       >>> len(m_doc) > 1
-       True
+    >>> my_list.sort()
+    >>> my_list.print_sorted()
+    [2, 3, 4, 5]
 
 List with negative numbers
-     >>> my_list[:] = [-8, -220, -1, -49, -75]
-     >>> my_list.print_sorted()
-     [-220, -75, -49, -8, -1]
+    >>> my_list[:] = [-89, -123, -3, -8]
+    >>> my_list.print_sorted()
+    [-123, -89, -8, -3]
+
+Extra arguments
+    >>> my_list.print_sorted([5, 7])
+    Traceback (most recent call last):
+    ...
+    TypeError: print_sorted() takes 1 positional argument but 2 were given
+
+Module docstring:
+    >>> m_doc = __import__('1-my_list').__doc__
+    >>> len(m_doc) > 1
+    True
+
+Class docstring:
+    >>> c_doc = __import__('1-my_list').MyList.__doc__
+    >>> len(c_doc) > 1
+    True
+
+Method docstring:
+    >>> m_doc = __import__('1-my_list').MyList.print_sorted.__doc__
+    >>> len(m_doc) > 1
+    True
