@@ -16,10 +16,12 @@ class Square(Rectangle):
 
     @size.setter
     def size(self, value):
+        """setter size"""
         self.width = value
         self.height = value
 
     def __str__(self):
+        """informal string"""
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                                                  self.width)
     def update(self, *args, **kwargs):
