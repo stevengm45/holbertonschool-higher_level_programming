@@ -24,6 +24,7 @@ class Square(Rectangle):
         """informal string"""
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                                                  self.width)
+
     def update(self, *args, **kwargs):
         """update square"""
         listargs = ["id", "size", "x", "y"]
