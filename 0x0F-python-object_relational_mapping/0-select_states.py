@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Function select states"""
+
+
 from sys import argv
 import MySQLdb as mysql
 
