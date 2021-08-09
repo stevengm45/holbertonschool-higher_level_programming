@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" this function list all State objects that contain the letter a from a database"""
+""" this function list all State objects that contain the letter a from a db"""
 
 
 import sqlalchemy
